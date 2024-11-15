@@ -1,0 +1,16 @@
+services:
+  frontend-admin:
+    build:
+      context: .  
+      target: development
+    container_name: frontend-admin  
+    ports:
+      - "3001:3001"  # Maps host port 5000 to container port 5000
+    environment:
+      - PORT=3001
+      - CHOKIDAR_USEPOLLING=true  # Ensure polling for file changes
+    volumes:
+      - .:/usr/src/app  # Mount the current directory into the container
+      - /usr/src/app/node_modules  # Ensure the container's node_modules is preserved
+      - /usr/src/app/build  # Prevent overwriting the build folder
+    command: ["npm", "start"]  # Start the React dev server
