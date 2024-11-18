@@ -5,7 +5,7 @@ services:
       target: development
     container_name: frontend-admin  
     ports:
-      - "3001:3001"  # Maps host port 5000 to container port 5000
+      - "3001:3001"  # Maps host port 3001 to container port 3001
     environment:
       - PORT=3001
       - CHOKIDAR_USEPOLLING=true  # Ensure polling for file changes

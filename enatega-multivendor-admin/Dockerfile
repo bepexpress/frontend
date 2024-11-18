@@ -17,7 +17,7 @@ USER node
 ENV CHOKIDAR_USEPOLLING=true
 
 # Expose the port for the React development server
-EXPOSE 3000
+EXPOSE 3001
 
 # Default command for development
 CMD ["npm", "start"]
