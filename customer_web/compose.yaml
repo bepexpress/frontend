@@ -1,12 +1,12 @@
 services:
-  admin_dashboard:
+  customer_web:
     build:
       context: .  
       target: development
     ports:
-      - "3001:3001"  # Maps host port 3001 to container port 3001
+      - "3002:3002"  # Maps host port 3001 to container port 3001
     environment:
-      - PORT=3001
+      - PORT=3002
       - CHOKIDAR_USEPOLLING=true  # Ensure polling for file changes
     volumes:
       - .:/usr/src/app  # Mount the current directory into the container

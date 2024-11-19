@@ -75,7 +75,7 @@ const en = {
     'Delivery Rate': 'Delivery Rate',
     'Currency Symbol': 'Currency Symbol',
     enterYourDetailsBelow: 'Enter your details below',
-    LogintoEnatega: 'Login to Enatega',
+    LogintoEnatega: 'Login to Admin Dashboard',
     RememberMe: 'Remember me',
     ForgotYourPassword: 'Forgot your password?',
     errorWhileSaving: 'An error occured while saving,Try again',
